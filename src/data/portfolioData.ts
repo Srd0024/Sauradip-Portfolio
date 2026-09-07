@@ -78,8 +78,8 @@ export const HELMI_HERO = {
     { label: "Ads", emoji: "🚀", pos: "top-16 -right-4 sm:right-2" },
     { label: "Social Media", emoji: "🖋️", pos: "bottom-20 -right-6 sm:right-0" },
   ],
-  heroPhoto: "/sauradip-hero.png",
-  aboutPhoto: "/Sauradip About Us Photo.png"
+  heroPhoto: "/sauradip-hero.webp",
+  aboutPhoto: "/Sauradip About Us Photo.webp"
 };
 
 export const HELMI_STATS = [
