@@ -77,6 +77,12 @@ export const CompanyLogo: React.FC<{ type: string; className?: string }> = ({ ty
 // Tool icons matching the 4 quadrants in the screenshot
 export const ToolAppIcon: React.FC<{ type: string }> = ({ type }) => {
   switch (type) {
+    case 'higgsfield':
+      return (
+        <div className="w-9 h-9 flex items-center justify-center bg-white rounded-xl shadow-2xs border border-neutral-100 overflow-hidden p-1.5">
+          <img src="https://www.google.com/s2/favicons?domain=higgsfield.ai&sz=128" alt="Higgsfield" className="w-full h-full object-contain" />
+        </div>
+      );
     case 'analytics':
       return (
         <div className="w-9 h-9 flex items-center justify-center bg-white rounded-xl shadow-2xs border border-neutral-100 overflow-hidden p-1.5">
@@ -167,6 +173,18 @@ export const ToolAppIcon: React.FC<{ type: string }> = ({ type }) => {
       return (
         <div className="w-9 h-9 flex items-center justify-center bg-white rounded-xl shadow-2xs border border-neutral-100 overflow-hidden p-1.5">
           <img src="https://www.google.com/s2/favicons?domain=pabbly.com&sz=128" alt="Pabbly" className="w-full h-full object-contain" />
+        </div>
+      );
+    case 'funnelytics':
+      return (
+        <div className="w-9 h-9 flex items-center justify-center bg-white rounded-xl shadow-2xs border border-neutral-100 overflow-hidden p-1.5">
+          <img src="https://www.google.com/s2/favicons?domain=funnelytics.io&sz=128" alt="Funnelytics" className="w-full h-full object-contain" />
+        </div>
+      );
+    case 'aisensy':
+      return (
+        <div className="w-9 h-9 flex items-center justify-center bg-white rounded-xl shadow-2xs border border-neutral-100 overflow-hidden p-1.5">
+          <img src="https://www.google.com/s2/favicons?domain=aisensy.com&sz=128" alt="AiSensy" className="w-full h-full object-contain" />
         </div>
       );
     case 'brevo':

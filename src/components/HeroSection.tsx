@@ -141,10 +141,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onPortfolioClick, onHi
               <span>Marketing</span>
             </div>
 
-            {/* 2. Mid-Left: [ 🌟 Brand ] */}
+            {/* 2. Mid-Left: [ ⚙️ Automation ] */}
             <div className="absolute bottom-[35%] sm:bottom-[40%] -left-[2%] sm:left-[2%] md:left-[8%] z-20 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-[#111111] text-white text-sm sm:text-base font-bold shadow-xl flex items-center gap-2 animate-float-2 cursor-default">
-              <span>🌟</span>
-              <span>Brand</span>
+              <span>⚙️</span>
+              <span>Automation</span>
             </div>
 
             {/* 3. Top-Right: [ 🚀 Ads ] */}

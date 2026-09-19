@@ -219,13 +219,13 @@ export const HELMI_TOOLS: ToolCategoryItem[] = [
     icons: [
       { name: "HubSpot", type: "hubspot" },
       { name: "Pabbly", type: "pabbly" },
-      { name: "Brevo", type: "brevo" }
+      { name: "AiSensy", type: "aisensy" }
     ],
     bullets: [
       "• HubSpot CRM",
       "• Pabbly Connect",
       "• AiSensy",
-      "• ConvertKit",
+      "• Interakt",
       "• Encharge",
       "• Brevo"
     ]
@@ -249,14 +249,14 @@ export const HELMI_TOOLS: ToolCategoryItem[] = [
     id: 'tool-4',
     category: "Creative & Content Production",
     icons: [
-      { name: "Photoshop", type: "photoshop" },
+      { name: "Higgsfield", type: "higgsfield" },
       { name: "Premiere", type: "premiere" },
       { name: "Canva", type: "canva" }
     ],
     bullets: [
       "• Adobe Photoshop",
       "• Adobe Premiere Pro",
-      "• CapCut",
+      "• Higgsfield",
       "• Canva"
     ]
   }
