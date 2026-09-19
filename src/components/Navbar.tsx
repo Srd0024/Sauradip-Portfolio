@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
       <div
         className={`max-w-7xl mx-auto flex items-center justify-between px-5 py-3 rounded-full transition-all duration-300 ${
           scrolled
-            ? 'bg-[#FAF7F2]/90 backdrop-blur-md shadow-md border border-neutral-300/70'
+            ? 'bg-[#FAF7F2]/95 backdrop-blur-md shadow-sm'
             : 'bg-transparent'
         }`}
       >
