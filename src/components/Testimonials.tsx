@@ -1,5 +1,5 @@
 import React from 'react';
-import { Quote, Sparkles, Star } from 'lucide-react';
+import { Quote, Sparkles, Star, Linkedin } from 'lucide-react';
 import { TESTIMONIALS } from '../data/portfolioData';
 
 export const Testimonials: React.FC = () => {
@@ -25,36 +25,34 @@ export const Testimonials: React.FC = () => {
         </div>
       </div>
 
-      {/* 2-Column Grid of Testimonial Cards */}
-      <div className="max-w-7xl mx-auto py-16 sm:py-24 px-4 sm:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* 3-Column Grid of Testimonial Cards */}
+      <div className="max-w-7xl mx-auto py-12 sm:py-16 px-4 sm:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           {TESTIMONIALS.map((test) => (
             <div
               key={test.id}
-              className="bg-white p-8 sm:p-10 rounded-[30px] border border-neutral-200/90 shadow-editorial shadow-editorial-hover relative flex flex-col justify-between"
+              className="bg-white p-6 sm:p-8 rounded-3xl border border-neutral-200/90 shadow-editorial shadow-editorial-hover relative flex flex-col justify-between h-full"
             >
               <div>
-                {/* Large orange quotation mark icon */}
-                <div className="mb-6 flex justify-between items-start">
-                  <div className="w-12 h-12 rounded-2xl bg-[#FDE8D7] flex items-center justify-center text-[#E8874A]">
-                    <Quote className="w-6 h-6 fill-[#E8874A]" />
+                {/* Large orange quotation mark icon & subtle LinkedIn icon */}
+                <div className="mb-5 flex justify-between items-start">
+                  <div className="w-10 h-10 rounded-2xl bg-[#FDE8D7] flex items-center justify-center text-[#E8874A]">
+                    <Quote className="w-5 h-5 fill-[#E8874A]" />
                   </div>
-                  <div className="flex items-center gap-1 text-[#E8874A]">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-[#E8874A]" />
-                    ))}
-                  </div>
+                  <a href={test.linkedinUrl || "https://linkedin.com"} target="_blank" rel="noreferrer" aria-label="LinkedIn Review">
+                    <Linkedin className="w-5 h-5 text-neutral-300 hover:text-[#0A66C2] transition-colors" />
+                  </a>
                 </div>
 
-                {/* 2–3 sentence testimonial text */}
-                <p className="font-body text-base sm:text-lg text-neutral-800 leading-relaxed italic mb-8">
+                {/* Testimonial text */}
+                <p className="font-body text-sm sm:text-[15px] text-neutral-700 leading-relaxed italic mb-6">
                   "{test.quote}"
                 </p>
               </div>
 
-              {/* Author Info with small circular headshot, name, title/role */}
-              <div className="pt-6 border-t border-neutral-100 flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#E8874A] shadow-xs shrink-0">
+              {/* Author Info */}
+              <div className="pt-5 border-t border-neutral-100 flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full overflow-hidden border border-[#E8874A]/30 shadow-xs shrink-0">
                   <img
                     src={test.avatarUrl}
                     alt={test.author}
@@ -62,11 +60,11 @@ export const Testimonials: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="font-heading font-extrabold text-base text-[#111111]">
+                  <h4 className="font-heading font-extrabold text-sm text-[#111111] leading-tight">
                     {test.author}
                   </h4>
-                  <p className="text-xs text-neutral-500 font-medium">
-                    {test.role}, <span className="font-bold text-neutral-700">{test.company}</span>
+                  <p className="text-[11px] text-neutral-500 font-medium leading-snug mt-0.5 line-clamp-2">
+                    {test.role} {test.company && <><span className="mx-1">•</span><span className="font-bold text-neutral-700">{test.company}</span></>}
                   </p>
                 </div>
               </div>

@@ -80,9 +80,9 @@ export const ClosingCTA: React.FC<ClosingCTAProps> = () => {
 
         {/* Row of Contact Icons / Links: LinkedIn, Instagram/TikTok, Email */}
         <div className="flex items-center gap-4 flex-wrap justify-center relative z-20">
-          <a
-            href="https://www.linkedin.com/in/sauradip-das-6333b6122/"
-            target="_blank"
+          <a 
+            href="https://www.linkedin.com/in/sauradip-das/" 
+            target="_blank" 
             rel="noreferrer"
             className="w-12 h-12 rounded-full bg-white border border-neutral-300 flex items-center justify-center text-neutral-800 hover:text-[#E8874A] hover:border-[#E8874A] hover:scale-110 transition-all shadow-xs"
             aria-label="LinkedIn Profile"

@@ -433,19 +433,30 @@ export const PERSONAL_PROJECTS: PersonalProject[] = [
 export const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 't-1',
-    quote: 'working under Sauradip, and I can confidently say he is an exceptional marketer and brand strategist. His grasp of short-form video dynamics and data-driven growth strategies helped us crush our TikTok campaign targets.',
-    author: 'Rian Pratama',
-    role: 'Growth Marketing Associate',
-    company: 'PT. Paragon Technology & Innovation',
-    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop'
+    quote: 'I had the opportunity to work with Sauradip previously and he is a great team player. With this deep knowledge of the process, he was always helpful when I needed help with anything.',
+    author: 'Tanuj Sharma',
+    role: 'Brand Marketing Manager | BRND.ME',
+    company: 'Mensa Brands',
+    avatarUrl: '/tanuj-sharma.png',
+    linkedinUrl: 'https://www.linkedin.com/in/62-tanuj-sharma/'
   },
   {
     id: 't-2',
-    quote: 'Sauradip demonstrates remarkable maturity in business development and relationship management. He spearheaded our affiliate campaigns with structured analytical thinking and flawless execution.',
-    author: 'Dita Anggraini',
-    role: 'Senior Brand Lead',
-    company: 'Joyy.Inc / Hago',
-    avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop'
+    quote: 'Sauradip for any graphic design projects! He is a highly skilled and creative graphic designer who excels in website design, graphic design, social media design & management, and SEO. Sauradip is not only talented but also a pleasure to work with. He consistently brings new and innovative ideas to the table and embraces technology to enhance his designs. I highly recommend Sauradip for his exceptional work ethic, attention to detail, and ability to deliver outstanding results.',
+    author: 'Rebecca Bormann',
+    role: 'Fractional CMO | Business Development Strategist',
+    company: '',
+    avatarUrl: '/rebecca-bormann.png',
+    linkedinUrl: 'https://www.linkedin.com/in/rebeccabormann/'
+  },
+  {
+    id: 't-3',
+    quote: 'Sauradip has been an extremely hardworking, helpful and supportive colleague. I learnt a lot of things from him, he goes beyond his KRA to deliver the tasks and achieve his. wherever he works he will always be a key player for the organisation.',
+    author: 'Dhruv Bhatt',
+    role: 'Business Development & Operations Professional',
+    company: '',
+    avatarUrl: '/dhruv-bhatt.png',
+    linkedinUrl: 'https://www.linkedin.com/in/dhruv911/'
   }
 ];
 

@@ -116,7 +116,7 @@ export const ExperienceEducation: React.FC = () => {
 
               {/* LinkedIn Button Sticker */}
               <a 
-                href="https://www.linkedin.com/in/sauradip-das-6333b6122/" 
+                href="https://www.linkedin.com/in/sauradip-das/" 
                 target="_blank" 
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#0A66C2] text-white text-xs font-bold shadow-md hover:bg-[#084e96] transition-all hover:scale-105"

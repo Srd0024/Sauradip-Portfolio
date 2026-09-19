@@ -111,6 +111,7 @@ export interface TestimonialItem {
   role: string;
   company: string;
   avatarUrl: string;
+  linkedinUrl?: string;
 }
 
 export interface SupportingDoc {
