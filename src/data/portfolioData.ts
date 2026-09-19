@@ -105,9 +105,10 @@ export const HELMI_SKILLS_RIBBON = [
 export const HELMI_ABOUT = {
   heading: "about.",
   paragraphs: [
-    "Call me Sauradip, I am a fresh graduate with a passion for creating business strategies, marketing strategies, growth marketing, and other business or brand activities. With 2 years of professional experience, I honed my skills in business development and strategy, B2B and B2C strategy, brand strategy, data analyst, and relationship.",
-    "I am experienced in social media strategy, brand strategy, marketing, campaign strategic, Ads Performance and relationship holds in various industries and companies such as FMCG., E-commerce, and Financial Technology (Fintech) company.",
-    "I am deeply committed to transforming ideas into results, whether it's crafting marketing and business strategies, brand campaigns, and optimizing sales performance."
+    "I’m Sauradip, a Performance Marketer and Marketing Automation Specialist focused on building acquisition systems that turn traffic into qualified leads.",
+    "I work across Meta Ads, Google Ads, LinkedIn outreach, lead generation, media planning, landing pages, and marketing automation, with experience across real estate, education, and B2B businesses.",
+    "What sets me apart is that I look beyond the ad account. I connect paid traffic, landing pages, lead capture, WhatsApp/CRM automation, and follow-ups to build a complete customer acquisition journey.",
+    "My approach is simple: find the right audience, build the right funnel, measure what matters, and optimize for better results."
   ]
 };
 
