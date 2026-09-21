@@ -153,9 +153,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onPortfolioClick, onHi
               <span>Ads</span>
             </div>
 
-            {/* 4. Bottom-Right: [ 📞 Social Media ] */}
+            {/* 4. Bottom-Right: [ 📱 Social Media ] */}
             <div className="absolute bottom-[25%] sm:bottom-[30%] -right-[2%] sm:right-[2%] md:right-[8%] z-20 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-[#111111] text-white text-sm sm:text-base font-bold shadow-xl flex items-center gap-2 animate-float-4 cursor-default">
-              <span>📞</span>
+              <span>📱</span>
               <span>Social Media</span>
             </div>
           </div>
