@@ -3,10 +3,58 @@ import React from 'react';
 // Brand Logos for Experience & Education
 export const CompanyLogo: React.FC<{ type: string; className?: string }> = ({ type, className = "w-10 h-10" }) => {
   switch (type) {
-    case 'kahf':
+    case 'brandveda':
       return (
-        <div className={`${className} bg-[#536551] rounded-xl flex items-center justify-center text-white font-serif font-bold text-xs tracking-wider shadow-xs`}>
-          Kahf
+        <div className={`${className} bg-white rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1`}>
+          <img src="/brandveda-logo.png" alt="Brandveda" className="w-full h-full object-contain" />
+        </div>
+      );
+    case 'yup':
+      return (
+        <div className={`${className} bg-black rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1`}>
+          <img src="/yup-logo.png" alt="Young Urban Project" className="w-full h-full object-contain" />
+        </div>
+      );
+    case 'digitalvidya':
+      return (
+        <div className={`${className} bg-white rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1`}>
+          <img src="/digitalvidya-logo.png" alt="Digital Vidya" className="w-full h-full object-contain" />
+        </div>
+      );
+    case 'pme':
+      return (
+        <div className={`${className} bg-white rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1`}>
+          <img src="/pme-logo.png" alt="Project Made Easy" className="w-full h-full object-contain scale-[1.2]" />
+        </div>
+      );
+    case 'spill':
+      return (
+        <div className={`${className} bg-white rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1`}>
+          <img src="/syt-logo.png" alt="Spill Your Thoughts" className="w-full h-full object-contain" />
+        </div>
+      );
+    case 'amber':
+      return (
+        <div className={`${className} bg-white rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1`}>
+          <img src="/amber-logo.png" alt="Amber Student" className="w-full h-full object-contain" />
+        </div>
+      );
+    case 'seedwill':
+      return (
+        <div className={`${className} bg-white rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1`}>
+          <img src="/seedwill-logo.png" alt="Seedwill Consulting" className="w-full h-full object-contain" />
+        </div>
+      );
+    case 'iilm':
+      return (
+        <div className={`${className} bg-white rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1`}>
+          <img src="/iilm-logo.png" alt="IILM Institute" className="w-full h-full object-contain scale-[1.1]" />
+        </div>
+      );
+    case 'kcdas':
+      return (
+        <div className={`${className} bg-white rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1`}>
+          <img src="/kcdas-logo.png" alt="KC Das Commerce College" className="w-full h-full object-contain" />
         </div>
       );
     case 'hago':
@@ -63,6 +111,30 @@ export const CompanyLogo: React.FC<{ type: string; className?: string }> = ({ ty
       return (
         <div className={`${className} bg-[#1E293B] rounded-xl flex items-center justify-center text-[#38BDF8] shadow-xs font-mono font-bold text-sm`}>
           DQ
+        </div>
+      );
+    case 'google-ads':
+      return (
+        <div className={`${className} bg-white rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1.5`}>
+          <img src="/google-ads-logo.png" alt="Google Ads" className="w-full h-full object-contain" />
+        </div>
+      );
+    case 'semrush':
+      return (
+        <div className={`${className} bg-[#111111] rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1.5`}>
+          <img src="/semrush-logo.png" alt="Semrush" className="w-full h-full object-contain scale-[1.2]" />
+        </div>
+      );
+    case 'hubspot':
+      return (
+        <div className={`${className} bg-white rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1.5`}>
+          <img src="https://www.google.com/s2/favicons?domain=hubspot.com&sz=128" alt="HubSpot" className="w-full h-full object-contain" />
+        </div>
+      );
+    case 'skillshop':
+      return (
+        <div className={`${className} bg-white rounded-xl flex items-center justify-center overflow-hidden border border-neutral-100 shadow-xs p-1.5`}>
+          <img src="/google-ads-logo.png" alt="Skillshop" className="w-full h-full object-contain" />
         </div>
       );
     default:
@@ -161,6 +233,12 @@ export const ToolAppIcon: React.FC<{ type: string }> = ({ type }) => {
       return (
         <div className="w-9 h-9 flex items-center justify-center bg-white rounded-xl shadow-2xs border border-neutral-100 overflow-hidden p-1.5">
           <img src="/google-ads-logo.png" alt="Google Ads" className="w-full h-full object-contain" />
+        </div>
+      );
+    case 'semrush':
+      return (
+        <div className="w-9 h-9 flex items-center justify-center bg-[#111111] rounded-xl shadow-2xs border border-neutral-100 overflow-hidden p-1.5">
+          <img src="/semrush-logo.png" alt="Semrush" className="w-full h-full object-contain scale-[1.2]" />
         </div>
       );
     case 'hubspot':

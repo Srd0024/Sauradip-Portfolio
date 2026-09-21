@@ -104,14 +104,20 @@ export const SkillsTools: React.FC = () => {
             {HELMI_CERTIFICATIONS.map((cert) => (
               <div key={cert.id} className="flex items-start gap-3.5 sm:gap-4">
                 <div className="shrink-0 mt-0.5">
-                  <CompanyLogo type={cert.logoType} className="w-10 h-10" />
+                  <CompanyLogo type={cert.logoType} className="w-10 h-10 sm:w-11 sm:h-11" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-heading font-extrabold text-xs sm:text-sm text-[#111111] leading-snug">
+                  <h3 className="font-heading font-extrabold text-sm sm:text-base text-[#111111] leading-snug">
                     {cert.title}
                   </h3>
-                  <p className="text-[11px] font-mono text-neutral-400 mt-0.5 font-medium">
+                  <p className="text-xs sm:text-[13px] text-neutral-600 mt-0.5 font-medium">
+                    {cert.provider}
+                  </p>
+                  <p className="text-[11px] font-mono text-neutral-400 mt-1 font-medium">
                     {cert.date}
+                  </p>
+                  <p className="text-[11px] font-mono text-neutral-400 mt-0.5 font-medium">
+                    Credential ID {cert.credentialId}
                   </p>
                 </div>
               </div>

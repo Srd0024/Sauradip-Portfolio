@@ -35,8 +35,10 @@ export interface ToolCategoryItem {
 export interface CertificationEntry {
   id: string;
   title: string;
+  provider: string;
   date: string;
-  logoType: 'rakamin' | 'coursera' | 'dataquest';
+  credentialId: string;
+  logoType: string;
 }
 
 export interface NotableProjectItem {
@@ -115,71 +117,102 @@ export const HELMI_ABOUT = {
 export const HELMI_EXPERIENCES: ExperienceEntry[] = [
   {
     id: 'exp-1',
-    company: "PT. Paragon Technology And Innovation",
-    role: "Digital Transformation Specialist (Kahf)",
-    date: "July 2024 - Jan 2025",
-    description: "Managed and analyzed TikTok strategy & several brand activations and optimized social media campaigns, driving sales growth and engagement across platforms.",
-    logoType: 'kahf'
+    company: "Brandveda",
+    role: "Performance Marketing Specialist",
+    date: "Apr 2026 - Present",
+    description: "Manage and optimize Meta Ads and Google Ads campaigns across education and real estate projects. Generated 26 qualified leads through a ₹50K Meta Ads campaign for a Dubai real estate client and 40+ qualified leads for Brandveda’s Performance Marketing Course. Also work on audience targeting, creative testing, budget optimization, and media planning.",
+    logoType: 'brandveda'
   },
   {
     id: 'exp-2',
-    company: "Joyy.Inc (Hago App)",
-    role: "Operations - Social Media & KOL",
-    date: "Dec 2023 - Jan 2024",
-    description: "Developed and executed social media campaigns (TikTok, Instagram), collaborated with KOLs, and increased brand visibility and user engagement.",
-    logoType: 'hago'
+    company: "Project Made Easy",
+    role: "Digital Marketing Executive",
+    date: "Jan 2024 - Mar 2026",
+    description: "Generated approximately $700K+ in B2B revenue through LinkedIn Sales Navigator, Apollo, and email marketing. Managed webinars, social media campaigns, LinkedIn outreach, and email campaigns to generate B2B leads, including lead generation for FluidPPM. Also built landing pages and SEO content and created promotional videos, banners, and event creatives.",
+    logoType: 'pme'
   },
   {
     id: 'exp-3',
-    company: "Bluebird Group",
-    role: "Product Manager",
-    date: "Sep 2023 - Oct 2023",
-    description: "Streamlined product development processes, coordinated cross-functional teams, and successfully launched new products to improve operational efficiency.",
-    logoType: 'bluebird'
+    company: "Spill Your Thoughts",
+    role: "SEO Intern",
+    date: "Jul 2023 - Oct 2023",
+    description: "Worked on keyword research, SEO analysis, and link-building campaigns to improve search visibility and website performance. Also developed WordPress websites based on client requirements.",
+    logoType: 'spill'
   },
   {
     id: 'exp-4',
-    company: "Lazada (Alibaba Group)",
-    role: "User Growth Affiliate",
-    date: "Nov 2022 - May 2024",
-    description: "Supported affiliate campaigns, analyzed performance, and implemented strategies to boost user acquisition and partner engagement.",
-    logoType: 'lazada'
+    company: "Amber Student",
+    role: "Global Sales Associate",
+    date: "Feb 2022 - Feb 2023",
+    description: "Handled outbound sales for UK student accommodation and generated more than £70,000 in commission through student bookings.",
+    logoType: 'amber'
   },
   {
     id: 'exp-5',
-    company: "Harian Kompas",
-    role: "Growth Marketing",
-    date: "May 2022 - Aug 2022",
-    description: "Executed email marketing and Facebook ad campaigns, implemented A/B testing, and enhanced user retention and revenue growth.",
-    logoType: 'kompas'
+    company: "Seedwill Consulting",
+    role: "Sales Manager",
+    date: "Oct 2019 - Mar 2020",
+    description: "Provided real estate consultation for Indian and international properties, generated leads, and worked on converting prospects to drive revenue.",
+    logoType: 'seedwill'
   }
 ];
 
 export const HELMI_EDUCATION: EducationEntry[] = [
   {
     id: 'edu-1',
-    institution: "Universitas Pelita Bangsa",
-    degreeOrProgram: "Bachelor's of Management",
-    date: "July 2020 - Oct 2024",
-    badge: "Bachelor's of Management",
-    details: "IPK/CGPA: 3.84/4.00 - Fast Track • Head of Marketing - Kelompok Studi Pasar Modal",
-    logoType: 'pelita'
+    institution: "IILM Institute",
+    degreeOrProgram: "PGDM in Marketing",
+    date: "2016 - 2018",
+    badge: "PGDM in Marketing",
+    details: "",
+    logoType: 'iilm'
   },
   {
     id: 'edu-2',
-    institution: "Rakamin Academy",
-    degreeOrProgram: "Scholarship Digital Marketing Bootcamp",
-    date: "Sep 2023 - Oct 2023",
-    details: "Received full 100% scholarship to learn topic: IoT, Digital Marketing for 12 months worth up to IDR 7+ million. Lead Project & Won the Final Project: @bernapediaid learning reached 252.7k+ growth, 18.6%+ engagement, 74.6k+ organic reach.",
-    logoType: 'rakamin'
+    institution: "KC Das Commerce College",
+    degreeOrProgram: "Bachelor of Commerce",
+    date: "2013 - 2016",
+    badge: "Bachelor of Commerce",
+    details: "",
+    logoType: 'kcdas'
+  }
+];
+
+export const HELMI_COURSES: EducationEntry[] = [
+  {
+    id: 'crs-1',
+    institution: "Brandveda",
+    degreeOrProgram: "Performance Genius",
+    date: "Apr 2026 - Sep 2026",
+    badge: "Performance Genius",
+    details: "",
+    logoType: "brandveda"
+  },
+  {
+    id: 'crs-2',
+    institution: "Young Urban Project",
+    degreeOrProgram: "Performance Marketing",
+    date: "Jul 2025 - Sep 2025",
+    badge: "Performance Marketing",
+    details: "",
+    logoType: "yup"
+  },
+  {
+    id: 'crs-3',
+    institution: "Digital Vidya",
+    degreeOrProgram: "Certified Digital Marketing Master",
+    date: "Mar 2023 - Nov 2023",
+    badge: "Certified Digital Marketing Master",
+    details: "",
+    logoType: "digitalvidya"
   }
 ];
 
 export const HELMI_ACCOLADES: AccoladeEntry[] = [
   {
     id: 'acc-1',
-    title: 'Speaker "Peran Social Media dan Personal Branding" with participant 25+ including CEO\'s',
-    year: "2023"
+    title: 'Generated 26 qualified leads through a ₹50K Meta Ads campaign for a Dubai real estate client and 40+ qualified leads for Brandveda’s Performance Marketing Course.',
+    year: ''
   }
 ];
 
@@ -266,33 +299,35 @@ export const HELMI_TOOLS: ToolCategoryItem[] = [
 export const HELMI_CERTIFICATIONS: CertificationEntry[] = [
   {
     id: 'cert-1',
-    title: "Rakamin Academy - Scholarship Digital Marketing Bootcamp",
-    date: "Jan 2024 - Jul 2024",
-    logoType: 'rakamin'
+    title: "Google Ads Search Certification (2026)",
+    provider: "Skillshop",
+    date: "Sep 2026 - Sep 2027",
+    credentialId: "194367387",
+    logoType: 'google-ads'
   },
   {
     id: 'cert-2',
-    title: "Rakamin Academy - Advanced Social Media Marketing",
-    date: "Aug 2024 - Aug 2024",
-    logoType: 'rakamin'
+    title: "Keyword Research",
+    provider: "Semrush",
+    date: "Jul 2023 - Jul 2024",
+    credentialId: "ec0cac2fef",
+    logoType: 'semrush'
   },
   {
     id: 'cert-3',
-    title: "Coursera - Google Project Management: Professional Certificate",
-    date: "Dec 2023 - Oct 2023",
-    logoType: 'coursera'
+    title: "SEO",
+    provider: "HubSpot Academy",
+    date: "Jul 2023 - Aug 2024",
+    credentialId: "2161902d3a4b4108b8ad77394a2221",
+    logoType: 'hubspot'
   },
   {
     id: 'cert-4',
-    title: "Coursera - Google Data Analytics Professional Certificate",
-    date: "May 2022 - Apr 2022",
-    logoType: 'coursera'
-  },
-  {
-    id: 'cert-5',
-    title: "Dataquest.io - Business Analyst Certification",
-    date: "Jan 2022 - Apr 2022",
-    logoType: 'dataquest'
+    title: "SEO Fundamental",
+    provider: "Semrush",
+    date: "Sep 2022 - Sep 2023",
+    credentialId: "H#fJHhBDhL9K5fP8",
+    logoType: 'semrush'
   }
 ];
 
