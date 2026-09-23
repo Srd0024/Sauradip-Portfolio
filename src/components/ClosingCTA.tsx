@@ -90,7 +90,7 @@ export const ClosingCTA: React.FC<ClosingCTAProps> = () => {
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/srd_24?"
             target="_blank"
             rel="noreferrer"
             className="w-12 h-12 rounded-full bg-white border border-neutral-300 flex items-center justify-center text-neutral-800 hover:text-[#E8874A] hover:border-[#E8874A] hover:scale-110 transition-all shadow-xs"
