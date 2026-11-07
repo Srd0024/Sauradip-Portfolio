@@ -6,10 +6,7 @@ import { AboutSection } from './components/AboutSection';
 import { ExperienceEducation } from './components/ExperienceEducation';
 import { SkillsTools } from './components/SkillsTools';
 import { NotableProjects } from './components/NotableProjects';
-import { CaseStudies } from './components/CaseStudies';
-import { PersonalProjects } from './components/PersonalProjects';
 import { Testimonials } from './components/Testimonials';
-import { SupportingDocuments } from './components/SupportingDocuments';
 import { ClosingCTA } from './components/ClosingCTA';
 
 export default function App() {
@@ -48,21 +45,10 @@ export default function App() {
         <SkillsTools />
 
         {/* 7. Notable Projects (numbered case studies with pastel 2x2 grid) */}
-        <NotableProjects
-          onSelectCaseStudy={() => handleScrollToSection('case-studies')}
-        />
-
-        {/* 8. Deep-Dive Case Studies (overlapping mockups, black result tiles, strategy band) */}
-        <CaseStudies />
-
-        {/* 9. Personal Projects (deep purple/navy accent, mockup + result tiles) */}
-        <PersonalProjects />
+        <NotableProjects />
 
         {/* 10. Testimonials ("what others say") */}
         <Testimonials />
-
-        {/* 11. Supporting Documents (certificates + teal award recognition slides) */}
-        <SupportingDocuments />
 
         {/* 12. Closing CTA / Footer */}
         <ClosingCTA />

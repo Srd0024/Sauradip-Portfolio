@@ -39,7 +39,7 @@ export const NotableProjects: React.FC<NotableProjectsProps> = ({ onSelectCaseSt
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           
-          {/* Project 1: Social Media And Brand Strategy (Kahf) */}
+          {/* Project 1: Meta Ad Campaign for Brandveda */}
           <div className="bg-[#EAEFF5]/60 hover:bg-[#EAEFF5] border border-neutral-300/80 rounded-[32px] p-6 sm:p-8 transition-all hover:shadow-lg flex flex-col justify-between relative overflow-hidden group">
             <div>
               {/* Header: Title and Client Watermark */}
@@ -48,9 +48,9 @@ export const NotableProjects: React.FC<NotableProjectsProps> = ({ onSelectCaseSt
                   {HELMI_NOTABLE_PROJECTS[0].title}
                 </h3>
                 
-                {/* Kahf Watermark Logo */}
-                <span className="text-3xl sm:text-4xl font-serif font-black text-neutral-400/70 tracking-wider">
-                  Kahf
+                {/* Brandveda Watermark Logo */}
+                <span className="text-2xl sm:text-3xl lg:text-4xl font-serif font-black text-neutral-400/70 tracking-wider whitespace-nowrap">
+                  Brandveda
                 </span>
               </div>
 
@@ -74,11 +74,11 @@ export const NotableProjects: React.FC<NotableProjectsProps> = ({ onSelectCaseSt
                       <Share2 className="w-4 h-4" />
                     </div>
                     <span className="font-heading font-bold text-xs sm:text-sm text-[#111111]">
-                      Social Media Strategy
+                      Meta Lead Campaign
                     </span>
                   </div>
                   <span className="text-xs font-mono font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">
-                    +240% Growth
+                    794 Leads
                   </span>
                 </div>
 
@@ -88,11 +88,11 @@ export const NotableProjects: React.FC<NotableProjectsProps> = ({ onSelectCaseSt
                       <TrendingUp className="w-4 h-4" />
                     </div>
                     <span className="font-heading font-bold text-xs sm:text-sm text-[#111111]">
-                      TikTok Content & Livestream
+                      Course Enrolments
                     </span>
                   </div>
                   <span className="text-xs font-mono font-bold text-[#E8874A] bg-orange-50 px-2 py-0.5 rounded-md">
-                    1.2M Views
+                    15 Enrolments
                   </span>
                 </div>
               </div>
@@ -189,61 +189,68 @@ export const NotableProjects: React.FC<NotableProjectsProps> = ({ onSelectCaseSt
 
       {/* Interactive Case Study Modal */}
       {activeProject && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
-          <div className="bg-[#FAF8F5] w-full max-w-3xl rounded-[32px] border border-neutral-300 p-6 sm:p-8 relative shadow-2xl my-8">
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6">
+          <div className="bg-[#FAF8F5] w-full max-w-3xl max-h-[90vh] rounded-[32px] border border-neutral-300 relative shadow-2xl flex flex-col overflow-hidden">
             <button
               onClick={() => setActiveProject(null)}
-              className="absolute top-6 right-6 w-9 h-9 rounded-full bg-white border border-neutral-300 flex items-center justify-center hover:bg-neutral-100 transition-colors"
+              className="absolute top-5 right-5 sm:top-6 sm:right-6 w-9 h-9 rounded-full bg-white border border-neutral-300 flex items-center justify-center hover:bg-neutral-100 transition-colors z-20 cursor-pointer"
             >
               <X className="w-5 h-5 text-neutral-700" />
             </button>
 
-            <div className="mb-6">
-              <span className="text-[11px] font-mono text-[#E8874A] uppercase tracking-wider font-bold">
-                Featured Case Study
-              </span>
-              <h3 className="font-heading font-black text-2xl sm:text-3xl text-[#111111] mt-1">
-                {activeProject.title}
-              </h3>
-            </div>
+            {/* Scrollable Modal Content */}
+            <div className="p-6 sm:p-8 overflow-y-auto flex-1">
+              <div className="mb-6 pr-10">
+                <span className="text-[11px] font-mono text-[#E8874A] uppercase tracking-wider font-bold">
+                  Featured Case Study
+                </span>
+                <h3 className="font-heading font-black text-2xl sm:text-3xl text-[#111111] mt-1">
+                  {activeProject.title}
+                </h3>
+              </div>
 
-            <p className="text-sm sm:text-base text-neutral-700 leading-relaxed mb-8">
-              {activeProject.details.context}
-            </p>
+              <p className="text-sm sm:text-base text-neutral-700 leading-relaxed mb-6 sm:mb-8">
+                {activeProject.details.context}
+              </p>
 
-            {/* Key Metrics */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
-              {activeProject.details.metrics.map((m, idx) => (
-                <div key={idx} className="p-4 rounded-2xl bg-white border border-neutral-200 text-center">
-                  <span className="font-heading font-black text-xl sm:text-2xl text-[#111111] block">
-                    {m.value}
-                  </span>
-                  <span className="text-[10px] text-neutral-500 font-medium">
-                    {m.label}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            {/* Strategy Highlights */}
-            <div className="mb-8">
-              <h4 className="font-heading font-extrabold text-sm uppercase tracking-wider text-neutral-900 mb-3">
-                Execution & Strategy
-              </h4>
-              <div className="space-y-2.5">
-                {activeProject.details.strategy.map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
-                    <Check className="w-4 h-4 text-[#E8874A] shrink-0 mt-0.5" />
-                    <span>{item}</span>
+              {/* Key Metrics: 2 rows of 4 on desktop, 2 cols x 4 rows on mobile */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 sm:mb-8">
+                {activeProject.details.metrics.map((m, idx) => (
+                  <div
+                    key={idx}
+                    className="p-3 sm:p-3.5 rounded-2xl bg-white border border-neutral-200 text-center flex flex-col justify-center items-center min-h-[76px] sm:min-h-[82px] h-full"
+                  >
+                    <span className="font-heading font-black text-base sm:text-lg lg:text-xl text-[#111111] block whitespace-nowrap leading-tight">
+                      {m.value}
+                    </span>
+                    <span className="text-[10px] sm:text-[11px] text-neutral-500 font-medium leading-tight mt-1 text-center min-h-[26px] flex items-center justify-center">
+                      {m.label}
+                    </span>
                   </div>
                 ))}
               </div>
+
+              {/* Strategy Highlights */}
+              <div className="mb-2">
+                <h4 className="font-heading font-extrabold text-sm uppercase tracking-wider text-neutral-900 mb-3">
+                  Execution & Strategy
+                </h4>
+                <div className="space-y-2.5">
+                  {activeProject.details.strategy.map((item, idx) => (
+                    <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
+                      <Check className="w-4 h-4 text-[#E8874A] shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
-            <div className="flex justify-end">
+            {/* Fixed Modal Footer */}
+            <div className="px-6 py-4 sm:px-8 sm:py-4 bg-[#FAF8F5] border-t border-neutral-200/80 flex justify-end shrink-0">
               <button
                 onClick={() => setActiveProject(null)}
-                className="px-6 py-2.5 rounded-full bg-[#111111] text-white text-xs font-bold hover:bg-[#E8874A] transition-colors"
+                className="px-6 py-2.5 rounded-full bg-[#111111] text-white text-xs font-bold hover:bg-[#E8874A] transition-colors cursor-pointer"
               >
                 Done
               </button>

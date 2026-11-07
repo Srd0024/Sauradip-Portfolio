@@ -334,26 +334,30 @@ export const HELMI_CERTIFICATIONS: CertificationEntry[] = [
 export const HELMI_NOTABLE_PROJECTS: NotableProjectItem[] = [
   {
     id: 'proj-1',
-    title: "Social Media And Brand Strategy",
-    clientBadge: "Kahf",
-    tags: ["Social Media & Strategy", "Growth Marketing"],
+    title: "Meta Ad Campaign for Brandveda",
+    clientBadge: "Brandveda",
+    tags: ["Meta Ads", "Lead Generation"],
     subFeatures: [
-      { iconName: "share-2", text: "Social Media Strategy", stat: "+240% Growth" },
-      { iconName: "video", text: "TikTok Content Production & Livestream", stat: "1.2M Views" },
-      { iconName: "trending-up", text: "Brand Recall & Influencer KOL Activation", stat: "94% Reach" }
+      { iconName: "share-2", text: "Meta Lead Campaign", stat: "794 Leads" },
+      { iconName: "trending-up", text: "Course Enrolments", stat: "15 Enrolments" },
+      { iconName: "video", text: "Ad Creative & Lead Funnel", stat: "Top 5% CTR" }
     ],
     details: {
-      context: "Managed and scaled Kahf's TikTok presence and multichannel digital campaigns across Southeast Asia, driving exponential organic reach and sales conversion during key seasonal shopping festivals.",
+      context: "Managed and scaled high-converting Meta Ad campaigns for Brandveda, driving targeted lead generation and course enrolments.",
       metrics: [
-        { value: "+320%", label: "TikTok Shop GMV Lift" },
-        { value: "4.8M", label: "Organic Impressions" },
-        { value: "28K", label: "New Followers Acquired" },
-        { value: "18.4%", label: "Average Engagement Rate" }
+        { value: "₹1,80,000", label: "Total Spend" },
+        { value: "9,13,742", label: "Impressions" },
+        { value: "1.18%", label: "CTR" },
+        { value: "794", label: "Leads Generated" },
+        { value: "₹226.70", label: "Cost per Lead" },
+        { value: "15", label: "Enrolments" },
+        { value: "₹12,000", label: "Cost per Enrolment" },
+        { value: "5.83x", label: "Return on Ad Spend" }
       ],
       strategy: [
-        "Crafted high-velocity video hooks targeting men's grooming routines and confidence narratives.",
-        "Collaborated with 40+ micro and macro Indonesian creators for synchronized product drops.",
-        "A/B tested TikTok Spark Ads against organic video creatives to optimize cost per acquisition."
+        "Ran the campaign on Meta and drove 10,782 clicks at ₹16.69 CPC.",
+        "Turned 794 form fills into 171 booked and 104 attended 1:1 video calls.",
+        "Closed 15 enrolments at ₹12,000 each, bringing in ₹10,50,000 in course fees."
       ]
     }
   },
