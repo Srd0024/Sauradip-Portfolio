@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Share2, Target, TrendingUp, Sparkles, ExternalLink, X, ChevronRight, Check } from 'lucide-react';
-import { CompanyLogo } from './LogosAndIcons';
+import brandvedaLogo from '../assets/brandveda-logo.png';
 import { HELMI_NOTABLE_PROJECTS, NotableProjectItem } from '../data/portfolioData';
 
 interface NotableProjectsProps {
@@ -37,21 +37,25 @@ export const NotableProjects: React.FC<NotableProjectsProps> = ({ onSelectCaseSt
 
       {/* 2. Grid of Project Cards matching the screenshot */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           
           {/* Project 1: Meta Ad Campaign for Brandveda */}
-          <div className="bg-[#EAEFF5]/60 hover:bg-[#EAEFF5] border border-neutral-300/80 rounded-[32px] p-6 sm:p-8 transition-all hover:shadow-lg flex flex-col justify-between relative overflow-hidden group">
+          <div className="bg-[#f7f2eb] hover:bg-[#f7f2eb] border border-neutral-300/80 rounded-[32px] p-6 sm:p-8 transition-all hover:shadow-lg flex flex-col justify-between relative overflow-hidden group h-full">
             <div>
-              {/* Header: Title and Client Watermark */}
+              {/* Header: Title and Brandveda Logo */}
               <div className="flex items-start justify-between gap-4 mb-4">
-                <h3 className="font-heading font-black text-2xl sm:text-3xl text-[#111111] max-w-[280px] leading-tight">
+                <h3 className="font-heading font-black text-2xl sm:text-3xl text-[#111111] max-w-[280px] leading-tight min-h-[90px] sm:min-h-[114px]">
                   {HELMI_NOTABLE_PROJECTS[0].title}
                 </h3>
                 
-                {/* Brandveda Watermark Logo */}
-                <span className="text-2xl sm:text-3xl lg:text-4xl font-serif font-black text-neutral-400/70 tracking-wider whitespace-nowrap">
-                  Brandveda
-                </span>
+                {/* Brandveda Logo Circle Frame */}
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden shrink-0 bg-white border border-neutral-400/80 shadow-2xs flex items-center justify-center p-1.5">
+                  <img
+                    src={brandvedaLogo}
+                    alt="Brandveda logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
 
               {/* Tag Pills */}
@@ -111,19 +115,25 @@ export const NotableProjects: React.FC<NotableProjectsProps> = ({ onSelectCaseSt
             </button>
           </div>
 
-          {/* Project 2: Business And Growth Strategy (Kompas & Lazada) */}
-          <div className="bg-[#F5EFE6]/60 hover:bg-[#F5EFE6] border border-neutral-300/80 rounded-[32px] p-6 sm:p-8 transition-all hover:shadow-lg flex flex-col justify-between relative overflow-hidden group">
+          {/* Project 2: Meta Lead Campaign for a Dubai Real Estate Company */}
+          <div className="bg-[#f7f2eb] hover:bg-[#f7f2eb] border border-neutral-300/80 rounded-[32px] p-6 sm:p-8 transition-all hover:shadow-lg flex flex-col justify-between relative overflow-hidden group h-full">
             <div>
-              {/* Header: Title and Client Watermark Logos */}
+              {/* Header: Title and Dubai Real Estate Badge */}
               <div className="flex items-start justify-between gap-4 mb-4">
-                <h3 className="font-heading font-black text-2xl sm:text-3xl text-[#111111] max-w-[280px] leading-tight">
-                  {HELMI_NOTABLE_PROJECTS[1].title}
+                <h3 className="font-heading font-black text-[18px] min-[375px]:text-xl sm:text-3xl text-[#111111] leading-tight min-h-[90px] sm:min-h-[114px]">
+                  <span className="block whitespace-nowrap">Meta Lead Campaign</span>
+                  <span className="block whitespace-nowrap">for a Dubai</span>
+                  <span className="block whitespace-nowrap">Real Estate Company</span>
                 </h3>
-                
-                {/* Kompas 'K' and Lazada Heart */}
-                <div className="flex items-center gap-1.5">
-                  <CompanyLogo type="kompas" className="w-8 h-8" />
-                  <CompanyLogo type="lazada" className="w-8 h-8" />
+
+                {/* Real Estate "R" Badge Circle Frame */}
+                <div
+                  aria-label="Real Estate"
+                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden shrink-0 bg-white border border-neutral-400/80 shadow-2xs flex items-center justify-center"
+                >
+                  <span className="font-heading font-black text-[#111111] text-[18px] sm:text-[22px] leading-none select-none">
+                    R
+                  </span>
                 </div>
               </div>
 
@@ -132,7 +142,7 @@ export const NotableProjects: React.FC<NotableProjectsProps> = ({ onSelectCaseSt
                 {HELMI_NOTABLE_PROJECTS[1].tags.map((tag, idx) => (
                   <span
                     key={idx}
-                    className="px-4 py-1.5 rounded-full border border-neutral-400/80 bg-white text-xs font-semibold text-neutral-800 shadow-2xs"
+                    className="px-4 py-1.5 rounded-full border border-neutral-400/80 bg-white text-xs font-semibold text-neutral-800 shadow-2xs whitespace-nowrap"
                   >
                     {tag}
                   </span>
@@ -147,11 +157,11 @@ export const NotableProjects: React.FC<NotableProjectsProps> = ({ onSelectCaseSt
                       <Target className="w-4 h-4" />
                     </div>
                     <span className="font-heading font-bold text-xs sm:text-sm text-[#111111]">
-                      Growth Marketing Strategy
+                      Lead Generation Campaign
                     </span>
                   </div>
                   <span className="text-xs font-mono font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md">
-                    +180% Orders
+                    24 Leads
                   </span>
                 </div>
 
@@ -161,11 +171,11 @@ export const NotableProjects: React.FC<NotableProjectsProps> = ({ onSelectCaseSt
                       <Sparkles className="w-4 h-4" />
                     </div>
                     <span className="font-heading font-bold text-xs sm:text-sm text-[#111111]">
-                      CRM & Lifecycle Funnels
+                      Cost per Lead
                     </span>
                   </div>
                   <span className="text-xs font-mono font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded-md">
-                    42% Open Rate
+                    ₹2,001.71
                   </span>
                 </div>
               </div>

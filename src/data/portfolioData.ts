@@ -363,26 +363,28 @@ export const HELMI_NOTABLE_PROJECTS: NotableProjectItem[] = [
   },
   {
     id: 'proj-2',
-    title: "Business And Growth Strategy",
-    clientLogos: ['kompas', 'lazada'],
-    tags: ["Marketing Strategy", "Creative Campaign", "CRM Management"],
+    title: "Meta Lead Campaign for a Dubai Real Estate Company",
+    tags: ["Meta Ads", "Lead Generation", "Real Estate"],
     subFeatures: [
-      { iconName: "target", text: "Growth Marketing Strategy", stat: "+180% Orders" },
-      { iconName: "users", text: "Affiliate Community Activation", stat: "15K Members" },
-      { iconName: "mail", text: "Lifecycle & Email Retention CRM", stat: "42% Open Rate" }
+      { iconName: "target", text: "Lead Generation Campaign", stat: "24 Leads" },
+      { iconName: "sparkles", text: "Cost per Lead", stat: "₹2,001.71" }
     ],
     details: {
-      context: "Formulated data-backed customer acquisition and retention funnels across Lazada's Affiliate Program and Kompas's digital subscription models.",
+      context: "Ran a Meta lead generation campaign for a Dubai-based real estate company, spending ₹48,041 to bring in 24 leads.",
       metrics: [
-        { value: "IDR 50M+", label: "Attributed Revenue Driven" },
-        { value: "3.2x", label: "Campaign ROAS Multiplier" },
-        { value: "15,000+", label: "Affiliate Partners Onboarded" },
-        { value: "-35%", label: "Customer Churn Rate" }
+        { value: "₹48,041", label: "Amount Spent" },
+        { value: "36,632", label: "Impressions" },
+        { value: "621", label: "Link Clicks" },
+        { value: "1.66%", label: "CTR (Link)" },
+        { value: "₹77.40", label: "CPC (Link)" },
+        { value: "24", label: "Leads" },
+        { value: "₹2,001.71", label: "Cost per Lead" },
+        { value: "27.45%", label: "Hook Rate" }
       ],
       strategy: [
-        "Architected multi-tier incentive schemes for high-performing affiliate partners.",
-        "Deployed automated lifecycle emails based on subscriber engagement milestones.",
-        "Integrated cross-platform UTM tracking with Google Analytics and internal databases."
+        "Reached 27,169 people at a frequency of 1.35.",
+        "Video creatives earned a 27.45% hook rate, with a 2.02% unique outbound CTR.",
+        "Turned 621 link clicks into 24 leads, a 3.86% click-to-lead rate."
       ]
     }
   }
